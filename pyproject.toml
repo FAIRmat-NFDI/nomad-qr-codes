@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "setuptools-scm>=8", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nomad-qr-codes"
+dynamic = ["version"]
+description = "A tool for generating QR codes"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "cairosvg",
+    "qrcode>=7.4",
+]
+
+[project.scripts]
+nomad-qr-codes = "nomad_qr_codes.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["nomad_qr_codes*"]
+namespaces = true
+
+[tool.setuptools.package-data]
+nomad_qr_codes = ["assets/logos/*.svg"]
+
+[tool.setuptools_scm]
+fallback_version = "0.0.0"
