@@ -312,7 +312,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("data", help="Encoded URL/text")
     parser.add_argument(
         "--preset",
-        choices=("default", "dark", "oasis", "dtu"),
+        choices=("default", "dark", "oasis", "plugin", "dtu"),
         default="default",
         help="Color preset (default: default).",
     )
@@ -361,6 +361,10 @@ def main() -> None:
         preset_color = "#008A68"
         preset_eyelet_color = "#2A4CDF"
         preset_logo_name = "oasis.svg"
+    elif args.preset == "plugin":
+        preset_color = "#4186e0"
+        preset_eyelet_color = "#2A4CDF"
+        preset_logo_name = "plugin.svg"
     elif args.preset == "dtu":
         preset_color = "#990000"
         preset_eyelet_color = "#990000"
