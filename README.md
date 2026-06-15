@@ -2,8 +2,8 @@
 
 Generate branded QR codes (PNG or SVG) with rounded dots, styled finder eyelets, and an embedded center logo:
 
-![NOMAD QR code](./images/nomad-dark.png#gh-dark-mode-only)
-![NOMAD QR code](./images/nomad-light.png#gh-light-mode-only)
+![NOMAD QR code](./examples/nomad-dark.png#gh-dark-mode-only)
+![NOMAD QR code](./examples/nomad-light.png#gh-light-mode-only)
 
 The package installs a CLI command:
 
