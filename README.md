@@ -1,5 +1,7 @@
 # NOMAD QR Codes
 
+[![Publish to PyPI](https://github.com/FAIRmat-NFDI/nomad-qr-codes/actions/workflows/python-publish.yml/badge.svg)](https://github.com/FAIRmat-NFDI/nomad-qr-codes/actions/workflows/python-publish.yml)
+
 Generate branded QR codes (PNG or SVG) with rounded dots, styled finder eyelets, and an embedded center logo:
 
 ![NOMAD QR code](./examples/nomad-dark.png#gh-dark-mode-only)
@@ -11,16 +13,16 @@ The package installs a CLI command:
 
 ## Installation
 
-### With uv (recommended)
+Install from PyPI:
 
 ```bash
-uv sync
+pip install nomad-qr-codes
 ```
 
-### With pip
+If you prefer uv:
 
 ```bash
-pip install .
+uv pip install nomad-qr-codes
 ```
 
 For editable local development:
