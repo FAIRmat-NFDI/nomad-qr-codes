@@ -7,7 +7,7 @@ name = "nomad-qr-codes"
 dynamic = ["version"]
 description = "A tool for generating QR codes"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.12"
 dependencies = [
     "cairosvg",
     "qrcode>=7.4",
